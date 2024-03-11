@@ -56,3 +56,24 @@ def load_graph(version):
 
         nx.write_gml(G, f"graph_files/graph_version{version}.gml")
         return G
+    
+    # version 2
+    elif version==2:
+        G.add_edge('black', 'married')
+        G.add_edge('black', 'educ')
+        G.add_edge('black', 'lwage')
+        G.add_edge('south', 'black')
+        # G.add_edge('smsa', 'south')
+        G.add_edge('smsa', 'black')
+        G.add_edge('smsa', 'lwage')
+        G.add_edge('smsa', 'nearc4')
+        G.add_edge('nearc4', 'educ')
+
+        #remove
+        G.add_edge('smsa', 'educ')
+        G.add_edge('educ', 'exper')
+        G.add_edge('educ', 'lwage')
+        G.add_edge('exper', 'lwage')
+
+        nx.write_gml(G, f"graph_files/graph_version{version}.gml")
+        return G
