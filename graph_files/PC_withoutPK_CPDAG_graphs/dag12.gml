@@ -39,6 +39,11 @@ graph [
   ]
   edge [
     source 0
+    target 3
+    weight 1
+  ]
+  edge [
+    source 0
     target 4
     weight 1
   ]
@@ -49,12 +54,12 @@ graph [
   ]
   edge [
     source 2
-    target 7
+    target 4
     weight 1
   ]
   edge [
-    source 3
-    target 0
+    source 2
+    target 7
     weight 1
   ]
   edge [
@@ -65,11 +70,6 @@ graph [
   edge [
     source 3
     target 7
-    weight 1
-  ]
-  edge [
-    source 4
-    target 2
     weight 1
   ]
   edge [

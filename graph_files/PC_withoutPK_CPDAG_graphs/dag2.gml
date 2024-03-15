@@ -38,11 +38,6 @@ graph [
     weight 1
   ]
   edge [
-    source 1
-    target 7
-    weight 1
-  ]
-  edge [
     source 2
     target 1
     weight 1
@@ -88,8 +83,8 @@ graph [
     weight 1
   ]
   edge [
-    source 6
-    target 7
+    source 7
+    target 1
     weight 1
   ]
 ]
